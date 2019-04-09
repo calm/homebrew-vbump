@@ -3,11 +3,16 @@ class Vbump < Formula
   homepage "https://github.com/calm/homebrew-vbump"
   url "https://github.com/calm/homebrew-vbump/archive/v0.0.6.tar.gz"
 
+
   depends_on "go" => :build
 
   def install
-    system "./gobuild.sh"
-    bin.install ".gobuild/bin/vbump" => "vbump"
+    ENV["GOPATH"] = buildpath
+    path = buildpath/"src/github.com/calm/homebrew-vbump"
+    system "go", "get", "-u", "github.com/calm/homebrew-vbump"
+    cd path do
+      system "go", "build", "-o", "#{bin}/vbump"
+    end
   end
 
   test do

@@ -2,7 +2,7 @@
 
 ## Installation
 
-`brew install vbump`
+`brew install calm/vbump/vbump`
 
 ## Usage
 

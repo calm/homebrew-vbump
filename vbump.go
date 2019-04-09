@@ -24,6 +24,8 @@ func main() {
 			log.Fatalf("Error initializing version %v", err)
 			os.Exit(1)
 		}
+		os.Exit(0)
+		return
 	}
 
 	version, err := getLatestGitTag()

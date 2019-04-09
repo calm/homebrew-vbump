@@ -1,4 +1,4 @@
-module github.com/calm/vbump
+module github.com/calm/homebrew-vbump
 
 require (
 	github.com/blang/semver v3.5.1+incompatible

@@ -1,7 +1,7 @@
 class Vbump < Formula
   desc "Bump your version and push to git in a safe and predictable manner"
-  homepage "https://github.com/calm/vbump"
-  url "https://github.com/calm/vbump/archive/v0.0.4.tar.gz"
+  homepage "https://github.com/calm/homebrew-vbump"
+  url "https://github.com/calm/homebrew-vbump/archive/v0.0.4.tar.gz"
 
   depends_on "go" => :build
 

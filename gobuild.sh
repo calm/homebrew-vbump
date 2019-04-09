@@ -3,7 +3,7 @@
 set -eux
 
 export GOPATH="$(pwd)/.gobuild"
-SRCDIR="${GOPATH}/src/github.com/calm/vbump"
+SRCDIR="${GOPATH}/src/github.com/calm/homebrew-vbump"
 
 [ -d ${GOPATH} ] && rm -rf ${GOPATH}
 mkdir -p ${GOPATH}/{src,pkg,bin}

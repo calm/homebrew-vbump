@@ -7,7 +7,8 @@ import (
 	"strings"
 
 	"github.com/blang/semver"
-	"github.com/calm/go-libs/log"
+
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
